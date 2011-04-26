@@ -2,12 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>parent</artifactId>
-    <groupId>ar.com.zauber.commons.social</groupId>
-    <version>3.47-SNAPSHOT</version>
+    <groupId>com.zaubersoftware.notsocommons.social</groupId>
+    <version>0.0-SNAPSHOT</version>
   </parent>
-  <name>Zauber::Commons::Social::Facebook</name>
-  <artifactId>commons-social-facebook</artifactId>
-  <groupId>ar.com.zauber.commons.social.facebook</groupId>
+  <name>Zauber::Not So Commons::Social::Facebook</name>
+  <artifactId>notsocommons-social-facebook</artifactId>
+  <groupId>com.zaubersoftware.notsocommons.social.facebook</groupId>
   <packaging>jar</packaging>
   <dependencies>
     <!-- BEGIN: Apache Commons -->        

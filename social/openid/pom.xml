@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>parent</artifactId>
-    <groupId>ar.com.zauber.commons.social</groupId>
-    <version>3.47-SNAPSHOT</version>
+      <artifactId>parent</artifactId>
+      <groupId>com.zaubersoftware.notsocommons.social</groupId>
+      <version>0.0-SNAPSHOT</version>
   </parent>
-  <name>Zauber::Commons::Social::OpenID</name>
-  <artifactId>commons-social-openid</artifactId>
-  <groupId>ar.com.zauber.commons.social.openid</groupId>
+  <name>Zauber::Not So Commons::Social::OpenID</name>
+  <artifactId>notsocommons-social-openid</artifactId>
+  <groupId>com.zaubersoftware.notsocommons.social.openid</groupId>
   <packaging>jar</packaging>
 
   <dependencies>

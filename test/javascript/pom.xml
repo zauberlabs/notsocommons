@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>commons-test-parent</artifactId>
-    <groupId>ar.com.zauber.commons.test</groupId>
-    <version>3.47-SNAPSHOT</version>
+    <artifactId>notsocommons-test-parent</artifactId>
+    <groupId>com.zaubersoftware.notsocommons.test</groupId>
+    <version>0.0-SNAPSHOT</version>
   </parent>
-  <name>Zauber::Commons::Test::Javascript</name>
-  <artifactId>commons-test-javascript</artifactId>
+  <name>Zauber::Not So Commons::Test::Javascript</name>
+  <artifactId>notsocommons-test-javascript</artifactId>
 
   <dependencies>
     <dependency>

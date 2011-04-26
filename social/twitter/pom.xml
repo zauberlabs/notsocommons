@@ -2,12 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>parent</artifactId>
-    <groupId>ar.com.zauber.commons.social</groupId>
-    <version>3.47-SNAPSHOT</version>
+    <groupId>com.zaubersoftware.notsocommons.social</groupId>
+    <version>0.0-SNAPSHOT</version>
   </parent>
-  <name>Zauber::Commons::Social::Twitter</name>
-  <artifactId>commons-social-twitter</artifactId>
-  <groupId>ar.com.zauber.commons.social.twitter</groupId>
+  <name>Zauber::Not So Commons::Social::Twitter</name>
+  <artifactId>notsocommons-social-twitter</artifactId>
+  <groupId>com.zaubersoftware.notsocommons.social.twitter</groupId>
   <packaging>jar</packaging>
   <dependencies>
 
@@ -16,8 +16,8 @@
         <artifactId>commons-base</artifactId>
     </dependency>
     <dependency>
-        <groupId>ar.com.zauber.commons.social.oauth</groupId>
-        <artifactId>commons-social-oauth-twitter</artifactId>
+        <groupId>com.zaubersoftware.notsocommons.social.oauth</groupId>
+        <artifactId>notsocommons-social-oauth-twitter</artifactId>
         <version>${project.version}</version>
         <exclusions>
             <exclusion>
