@@ -3,7 +3,7 @@
   <parent>
     <artifactId>notsocommons-test-parent</artifactId>
     <groupId>com.zaubersoftware.notsocommons.test</groupId>
-    <version>0.0-SNAPSHOT</version>
+    <version>0.0</version>
   </parent>
   <name>Zauber::Not So Commons::Test::Javascript</name>
   <artifactId>notsocommons-test-javascript</artifactId>

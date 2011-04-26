@@ -4,7 +4,7 @@
   <parent>
           <groupId>com.zaubersoftware.notsocommons</groupId>
           <artifactId>zauber-notosocommons-parent</artifactId>
-          <version>0.0-SNAPSHOT</version>
+          <version>0.0</version>
   </parent>
   <name>Zauber::Not So Commons::Conversion::Parent</name>
   <groupId>com.zaubersoftware.notsocommons.converter</groupId>

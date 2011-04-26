@@ -3,7 +3,7 @@
   <parent>
     <artifactId>parent</artifactId>
     <groupId>com.zaubersoftware.notsocommons.social</groupId>
-    <version>0.0-SNAPSHOT</version>
+    <version>0.0</version>
   </parent>
   <name>Zauber::Not So Commons::Social::Facebook</name>
   <artifactId>notsocommons-social-facebook</artifactId>
