@@ -3,7 +3,7 @@
   <parent>
           <groupId>com.zaubersoftware.notsocommons</groupId>
           <artifactId>zauber-notosocommons-parent</artifactId>
-          <version>0.0</version>
+          <version>0.1-SNAPSHOT</version>
   </parent>
   <name>Zauber::Not So Commons::Gis</name>
   <artifactId>notsocommons-gis</artifactId>
