@@ -31,7 +31,7 @@ import ar.com.zauber.commons.social.twitter.api.streaming.filter.StreamingFilter
 public final class StreamingFilterImpl implements StreamingFilter {
 
     private int previousStatuses = 0;
-    private int[] userIds = new int[] {};
+    private long[] userIds = new long[] {};
     private String[] keywords = new String[] {};
     private BoundingBox[] boxes = new BoundingBox[] {};
 
@@ -41,7 +41,7 @@ public final class StreamingFilterImpl implements StreamingFilter {
     }
 
     @Override
-    public int[] getUserIds() {
+    public long[] getUserIds() {
         return userIds;
     }
 
@@ -59,7 +59,7 @@ public final class StreamingFilterImpl implements StreamingFilter {
         this.previousStatuses = previousStatuses;
     }
 
-    public void setUserIds(final int[] userIds) {
+    public void setUserIds(final long[] userIds) {
         this.userIds = userIds;
     }
 

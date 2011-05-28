@@ -18,13 +18,14 @@ package ar.com.zauber.commons.social.twitter.impl.streaming;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import twitter4j.ConnectionLifeCycleListener;
 import twitter4j.FilterQuery;
 import twitter4j.Status;
 import twitter4j.StatusDeletionNotice;
 import twitter4j.StatusListener;
-import twitter4j.TwitterException;
 import twitter4j.TwitterStream;
 import twitter4j.TwitterStreamFactory;
+import twitter4j.auth.BasicAuthorization;
 import ar.com.zauber.commons.dao.Closure;
 import ar.com.zauber.commons.dao.Transformer;
 import ar.com.zauber.commons.social.twitter.api.Tweet;
@@ -72,8 +73,8 @@ public class TweetFetcher {
      * @return
      */
     private TwitterStream createStream(final String user, final String password) {
-        final TwitterStream stream = new TwitterStreamFactory().getInstance(
-                user, password);
+        final TwitterStream stream = new TwitterStreamFactory().getInstance(new BasicAuthorization(user,
+                password));
 
         stream.addListener(new StatusListener() {
             @Override
@@ -106,8 +107,23 @@ public class TweetFetcher {
             }
             
             @Override
-            public void onScrubGeo(int userId, long upToStatusId) {
+            public void onScrubGeo(long userId, long upToStatusId) {
                 logger.warn("scrubGeo: {} {}", userId, upToStatusId);
+            }
+        });
+        
+        stream.addConnectionLifeCycleListener(new ConnectionLifeCycleListener() {
+            @Override
+            public void onDisconnect() {
+                logger.warn("Disconnected from Twitter!");
+            }
+            
+            @Override
+            public void onConnect() {
+            }
+            
+            @Override
+            public void onCleanUp() {
             }
         });
         
@@ -120,12 +136,8 @@ public class TweetFetcher {
     public final void openStream() {
         if (!streamStarted) {
             logger.info("Opening Twitter Stream!");
-            try {
-                stream.filter(toFilterQuery(filter));
-                streamStarted = true;
-            } catch (TwitterException e) {
-                logger.error("Exception al abrir stream", e);
-            }
+            stream.filter(toFilterQuery(filter));
+            streamStarted = true;
         } else {
             logger.warn("Stream is already opened!");
         }
@@ -140,7 +152,7 @@ public class TweetFetcher {
      */
     private FilterQuery toFilterQuery(final StreamingFilter filter2) {
         final int count = filter2.getPreviousStatuses();
-        final int[] follow = filter2.getUserIds();
+        final long[] follow = filter2.getUserIds();
         final String[] track = filter2.getKeywords();
 
         double[][] locations;

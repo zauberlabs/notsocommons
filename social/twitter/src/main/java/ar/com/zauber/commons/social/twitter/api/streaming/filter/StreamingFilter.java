@@ -33,7 +33,7 @@ public interface StreamingFilter {
     /**
      * The users id to receive public tweets from. Never returns null.
      */
-    int[] getUserIds();
+    long[] getUserIds();
 
     /**
      * Keywords to track. Never returns null.
