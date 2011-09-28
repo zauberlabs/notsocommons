@@ -28,7 +28,6 @@ import twitter4j.TwitterStreamFactory;
 import twitter4j.auth.BasicAuthorization;
 import ar.com.zauber.commons.dao.Closure;
 import ar.com.zauber.commons.dao.Transformer;
-import ar.com.zauber.commons.social.twitter.api.Tweet;
 import ar.com.zauber.commons.social.twitter.api.streaming.filter.BoundingBox;
 import ar.com.zauber.commons.social.twitter.api.streaming.filter.StreamingFilter;
 import ar.com.zauber.commons.validate.Validate;
@@ -40,14 +39,14 @@ import ar.com.zauber.commons.validate.Validate;
  * @author Francisco J. González Costanzó
  * @since Sep 20, 2010
  */
-public class TweetFetcher {
+public class TweetFetcher<T> {
 
     private final Logger logger = LoggerFactory
             .getLogger(TweetFetcher.class);
 
     private final TwitterStream stream;
-    private final Transformer<Status, Tweet> transformer;
-    private final Closure<Tweet> closure;
+    private final Transformer<Status, T> transformer;
+    private final Closure<T> closure;
     
     private StreamingFilter filter;
     private boolean streamStarted = false;
@@ -55,8 +54,8 @@ public class TweetFetcher {
     /** Creates the TweetFetcher. */
     public TweetFetcher(final String user, final String password,
             final StreamingFilter filter,
-            final Transformer<Status, Tweet> transformer,
-            final Closure<Tweet> closure) {
+            final Transformer<Status, T> transformer,
+            final Closure<T> closure) {
         Validate.notBlank(user, password);
         Validate.notNull(filter, transformer, closure);
         this.stream = createStream(user, password);
@@ -80,7 +79,7 @@ public class TweetFetcher {
             @Override
             public void onStatus(final Status status) {
                 try {
-                    Tweet t = transformer.transform(status);
+                    T t = transformer.transform(status);
                     closure.execute(t);
                 } catch (Throwable ex) {
                     logger.error("Exception en onStatus", ex);
@@ -107,7 +106,7 @@ public class TweetFetcher {
             }
             
             @Override
-            public void onScrubGeo(long userId, long upToStatusId) {
+            public void onScrubGeo(final long userId, final long upToStatusId) {
                 logger.warn("scrubGeo: {} {}", userId, upToStatusId);
             }
         });
@@ -191,7 +190,7 @@ public class TweetFetcher {
      * 
      * @param filter
      */
-    public final void updateFilter(StreamingFilter filter) {
+    public final void updateFilter(final StreamingFilter filter) {
         this.closeStream();
         this.filter = filter;
         this.openStream();
