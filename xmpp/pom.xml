@@ -32,7 +32,7 @@
     </dependency -->
 
     <dependency>
-      <groupId>ar.com.zauber.commons.message</groupId>
+      <groupId>com.zaubersoftware.commons.message</groupId>
       <artifactId>commons-message-api</artifactId>
       <version>${commons.version}</version>
     </dependency>

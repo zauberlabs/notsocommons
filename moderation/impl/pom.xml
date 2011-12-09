@@ -12,23 +12,24 @@
   <dependencies>
     <!-- BEGIN: Zauber Commons -->
     <dependency>
-      <groupId>ar.com.zauber.commons</groupId>
+      <groupId>com.zaubersoftware.commons</groupId>
       <artifactId>commons-base</artifactId>
     </dependency>
     <dependency>
-      <groupId>ar.com.zauber.commons.auth</groupId>
+      <groupId>com.zaubersoftware.commons.auth</groupId>
       <artifactId>commons-auth-impl</artifactId>
     </dependency>
     <dependency>
-      <groupId>ar.com.zauber.commons.moderation</groupId>
-      <artifactId>commons-moderation-api</artifactId>
+      <groupId>com.zaubersoftware.notsocommons.moderation</groupId>
+      <artifactId>notsocommons-moderation-api</artifactId>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>ar.com.zauber.commons.repository.impl</groupId>
+      <groupId>com.zaubersoftware.commons.repository.impl</groupId>
       <artifactId>commons-repository-impl-entities</artifactId>
     </dependency>
     <dependency>
-      <groupId>ar.com.zauber.commons.repository.impl</groupId>
+      <groupId>com.zaubersoftware.commons.repository.impl</groupId>
       <artifactId>commons-repository-impl-springhbm</artifactId>
     </dependency>
     <!-- END: Zauber Commons -->

@@ -2,7 +2,7 @@
   <parent>
   <artifactId>parent</artifactId>
   <groupId>com.zaubersoftware.notsocommons.social.oauth</groupId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
@@ -124,7 +124,7 @@
 
         <!-- BEGIN: Zauber Commons -->
         <dependency>
-            <groupId>com.zaubersoftware.commons</groupId>
+            <groupId>ar.com.zauber.commons</groupId>
             <artifactId>commons-spring</artifactId>
         </dependency>
         <!-- END: Zauber Commons -->

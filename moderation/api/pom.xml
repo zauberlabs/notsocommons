@@ -7,10 +7,11 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>notsocommons-moderation-api</artifactId>
   <name>Zauber::Not So Commons::Moderation::API</name>
+  <packaging>jar</packaging>
   
   <dependencies>
     <dependency>
-      <groupId>ar.com.zauber.commons.repository</groupId>
+      <groupId>com.zaubersoftware.commons.repository</groupId>
       <artifactId>commons-repository-api</artifactId>
     </dependency>
   </dependencies>

@@ -10,12 +10,12 @@
   <dependencies>
 
     <dependency>
-      <groupId>ar.com.zauber.commons.repository</groupId>
+      <groupId>com.zaubersoftware.commons.repository</groupId>
       <artifactId>commons-repository-api</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>ar.com.zauber.commons.message</groupId>
+      <groupId>com.zaubersoftware.commons.message</groupId>
       <artifactId>commons-message-api</artifactId>
       <scope>compile</scope>
     </dependency>

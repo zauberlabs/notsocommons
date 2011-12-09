@@ -1,6 +1,6 @@
 <?xml version="1.0"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-      <groupId>ar.com.zauber.commons.wicket</groupId>
+     <groupId>com.zaubersoftware.notsocommons.wicket</groupId>
       <artifactId>parent</artifactId>
       <version>0.2-SNAPSHOT</version>
   </parent>
@@ -16,7 +16,7 @@
     
     <dependency>
        <artifactId>commons-repository-api</artifactId>
-       <groupId>ar.com.zauber.commons.repository</groupId>
+       <groupId>com.zaubersoftware.commons.repository</groupId>
     </dependency>
     
    <dependency>

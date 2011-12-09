@@ -1,40 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>parent</artifactId>
-    <groupId>com.zaubersoftware.notsocommons.social</groupId>
-    <version>0.2-SNAPSHOT</version>
+      <artifactId>parent</artifactId>
+      <groupId>com.zaubersoftware.notsocommons.social</groupId>
+      <version>0.0-SNAPSHOT</version>
   </parent>
-  <name>Zauber::Not So Commons::Social::Twitter</name>
-  <artifactId>notsocommons-social-twitter</artifactId>
-  <groupId>com.zaubersoftware.notsocommons.social.twitter</groupId>
+  <name>Zauber::Not So Commons::Social::OpenID</name>
+  <artifactId>notsocommons-social-openid</artifactId>
+  <groupId>com.zaubersoftware.notsocommons.social.openid</groupId>
   <packaging>jar</packaging>
+
   <dependencies>
-
-    <dependency>
-        <groupId>com.zaubersoftware.commons</groupId>
-        <artifactId>commons-base</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>com.zaubersoftware.notsocommons.social.oauth</groupId>
-        <artifactId>notsocommons-social-oauth-twitter</artifactId>
-        <version>${project.version}</version>
-        <exclusions>
-            <exclusion>
-	            <groupId>org.twitter4j</groupId>
-                <artifactId>twitter4j-core</artifactId>
-            </exclusion>
-        </exclusions>
-    </dependency>
-    
-    <!-- BEGIN: Twitter4J -->        
-	<dependency>
-	    <groupId>org.twitter4j</groupId>
-	    <artifactId>twitter4j-stream</artifactId>
-	    <version>2.2.2</version>
-	</dependency>
-    <!-- END: Twitter4J -->
-
     <!-- BEGIN: Apache Commons -->        
     <dependency>
       <groupId>commons-lang</groupId>
@@ -49,11 +25,6 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <scope>test</scope>
     </dependency>
     <!-- END: Spring Framework -->
     <!-- BEGIN: Spring Security Framework -->
@@ -76,16 +47,13 @@
       <artifactId>servlet-api</artifactId>
     </dependency>
     <!-- END: J2EE Servlet -->
-    <!-- BEGIN: Logging -->
+    
+    <!-- OpenID -->     
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
+      <groupId>com.dyuproject</groupId>
+      <artifactId>dyuproject-openid</artifactId>
+      <version>1.1.6</version>
     </dependency>
-    <!-- In order to commons-logging usage is bypassed to slf4j -->
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jcl-over-slf4j</artifactId>
-    </dependency>
-    <!-- END: Logging -->
   </dependencies>
+  
 </project>
