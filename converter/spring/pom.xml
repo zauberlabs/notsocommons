@@ -26,9 +26,9 @@
        <artifactId>spring-context</artifactId>
      </dependency>
      <dependency>
-        <groupId>trang</groupId>
+        <groupId>com.thaiopensource</groupId>
         <artifactId>trang</artifactId>
-        <version>20081028</version>
+        <version>20091111</version>
        <scope>provided</scope>
      </dependency>
   </dependencies>
