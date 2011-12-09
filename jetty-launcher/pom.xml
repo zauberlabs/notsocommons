@@ -7,7 +7,6 @@
       <version>0.2-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ar.com.zauber.commons</groupId>
   <artifactId>commons-jetty-launcher</artifactId>
   <name>Zauber::Not So Commons::Jeety-Launcher</name>
   <packaging>jar</packaging>
