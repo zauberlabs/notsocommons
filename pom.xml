@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>bare</artifactId>
-    <groupId>ar.com.zauber.maven.poms</groupId>
-    <version>1.0.8</version>
+    <groupId>com.zaubersoftware.maven.poms</groupId>
+    <version>1.0.10</version>
   </parent>
   <name>Zauber::Not So Commons</name>
   <groupId>com.zaubersoftware.notsocommons</groupId>
