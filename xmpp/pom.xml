@@ -10,7 +10,7 @@
   <name>Zauber::Not So Commons::XMPP</name>
 
   <properties>
-    <smack.version>3.1.0-beta1</smack.version>
+    <smack.version>3.1.0</smack.version>
   </properties>  
   
   <dependencies>
