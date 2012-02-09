@@ -3,7 +3,7 @@
   <parent>
      <groupId>com.zaubersoftware.notsocommons</groupId>
      <artifactId>zauber-notosocommons-parent</artifactId>
-     <version>0.2-SNAPSHOT</version>
+     <version>0.2</version>
   </parent>
   <name>Zauber::Not So Commons::Wicket</name>
   <groupId>com.zaubersoftware.notsocommons.wicket</groupId>
