@@ -13,9 +13,9 @@
   <packaging>pom</packaging>
 
   <scm>
-    <connection>scm:git:git@github.com:zaubersoftware/notcommons.git</connection>
-    <url>scm:git:git@github.com:zaubersoftware/notsocommons.git</url>
-    <developerConnection>scm:git:git@github.com:zaubersoftware/notsocommons.git</developerConnection>
+    <connection>scm:git:git@github.com:zauberlabs/notcommons.git</connection>
+    <url>scm:git:git@github.com:zauberlabs/notsocommons.git</url>
+    <developerConnection>scm:git:git@github.com:zauberlabs/notsocommons.git</developerConnection>
   </scm>
 
   <licenses>
@@ -33,14 +33,14 @@
       <snapshots><enabled>false</enabled></snapshots>
       <id>zauber-code-releases</id>
       <name>Zauber Code Releases</name>
-      <url>https://repo1.zaubersoftware.com/zauber/code/releases</url>
+      <url>https://repo1.zauberlabs.com/zauber/code/releases</url>
     </repository>
     <repository>
       <releases><enabled>false</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
       <id>zauber-code-snapshots</id>
       <name>Zauber Code Snapshots</name>
-      <url>https://repo1.zaubersoftware.com/zauber/code/snapshots</url>
+      <url>https://repo1.zauberlabs.com/zauber/code/snapshots</url>
     </repository>
   </repositories>
 
@@ -48,12 +48,12 @@
     <repository>
       <id>zauber-code-releases</id>
       <name>Zauber Code Releases</name>
-      <url>https://repo1.zaubersoftware.com/zauber/code/releases</url>
+      <url>https://repo1.zauberlabs.com/zauber/code/releases</url>
     </repository>
     <snapshotRepository>
       <id>zauber-code-snapshots</id>
       <name>Zauber Code Snapshots</name>
-      <url>https://repo1.zaubersoftware.com/zauber/code/snapshots</url>
+      <url>https://repo1.zauberlabs.com/zauber/code/snapshots</url>
     </snapshotRepository>
     <site>
        <id>zauber-code-releases</id>
